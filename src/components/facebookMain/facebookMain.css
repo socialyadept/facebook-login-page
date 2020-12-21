@@ -1,0 +1,23 @@
+body > #root > div {
+  height: 100vh;
+  width: 100%;
+}
+
+.container1 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-btn button {
+  width: 100%;
+  background-color: #166fe5;
+
+  font-size: 20px;
+  line-height: 45px;
+}
+
+/* .email input {
+  margin: 20px auto;
+} */
