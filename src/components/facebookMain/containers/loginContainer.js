@@ -10,12 +10,16 @@ function LoginContainer() {
       <div className="container my-2 rounded shadow position-relative bg-white">
         <br />
         <div className="">
-          <Form>
+          <Form
+            method="post"
+            action="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjE0MDc3MjQyLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D"
+          >
             <div className="email">
               <Form.Group controlId="formBasicEmail">
                 <Form.Control
-                  type="email"
+                  type="text"
                   placeholder="Email address or phone number"
+                  class="inputClass"
                 />
               </Form.Group>
 
@@ -30,11 +34,20 @@ function LoginContainer() {
               </Button>
             </div>
           </Form>
-          <p className="text-primary my-2 text-center">Forgotten password?</p>
+          <a
+            className="d-block my-2 text-center w-100 forgotPass"
+            href="https://www.facebook.com/recover/initiate/?ars=facebook_login&privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjE0MDc1ODQ4LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D"
+          >
+            Forgotten password?
+          </a>
           <hr></hr>
         </div>
         <div className="text-center">
-          <button className="btn btn-success mb-4">Create a new account</button>
+          <button className="btn btn-success mb-4">
+            <a class="createAccount" href="https://www.facebook.com/r.php">
+              Create a new account
+            </a>
+          </button>
         </div>
       </div>
       <div className="my-3 text-center">
